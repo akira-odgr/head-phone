@@ -19,7 +19,7 @@ export const FadeUp = (delay) => {
         },
         exit: {
             opacity: 0,
-            y: 0,
+            y: 50,
             scale: 0.5,
             transition: {
                 duration: 0.2,
