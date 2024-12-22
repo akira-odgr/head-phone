@@ -13,7 +13,7 @@ export const Navbar = () => {
                 <motion.nav
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.2 }}
+                    transition={{ duration: 1, delay: 0.5 }}
                     className="container flex justify-between items-center"
                 >
                     {/* ____ Logo section ____ */}
@@ -50,19 +50,19 @@ export const Navbar = () => {
                                     </li>
                                 );
                             })}
-                            <button className="text-xl ps-14">
-                                <UpdateFollower
-                                    mouseOptions={{
-                                        backgroundColor: "white",
-                                        zIndex: 999,
-                                        followSpeed: 1.5,
-                                        scale: 5,
-                                        mixBlendMode: "difference",
-                                    }}
-                                >
+                            <UpdateFollower
+                                mouseOptions={{
+                                    backgroundColor: "white",
+                                    zIndex: 999,
+                                    followSpeed: 1.5,
+                                    scale: 5,
+                                    mixBlendMode: "difference",
+                                }}
+                            >
+                                <button className="text-xl ps-14">
                                     <SlEarphones />
-                                </UpdateFollower>
-                            </button>
+                                </button>
+                            </UpdateFollower>
                         </ul>
                     </div>
                     {/* ____ Mobile Hamburger section ____ */}
