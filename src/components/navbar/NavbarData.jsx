@@ -1,4 +1,4 @@
-export const navbarData = [
+export const NavbarData = [
     {
         id: 1,
         title: "Home",
