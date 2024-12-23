@@ -2,26 +2,26 @@ export const navbarData = [
     {
         id: 1,
         title: "Home",
-        link: "#",
+        link: "/",
     },
     {
         id: 2,
         title: "Categories",
-        link: "#",
+        link: "/",
     },
     {
         id: 3,
         title: "Blog",
-        link: "#",
+        link: "/",
     },
     {
         id: 4,
         title: "About",
-        link: "#",
+        link: "/",
     },
     {
         id: 5,
         title: "Contact",
-        link: "#",
+        link: "/",
     },
 ];

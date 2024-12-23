@@ -1,13 +1,20 @@
+import { FadeUp } from "../../utility/animation";
 import { UpdateFollower } from "react-mouse-follower";
 import { servicesData } from "./servicesData";
+import { motion } from "framer-motion";
 
 export const Services = () => {
     return (
         <section className="bg-gray-100 font-poppins py-8">
             <div className="container py-14">
-                <h1 className="text-3xl font-bold text-center pb-10">
+                <motion.h1
+                    variants={FadeUp(0.2)}
+                    initial="hidden"
+                    whileInView="show"
+                    className="text-3xl font-bold text-center pb-10"
+                >
                     Service
-                </h1>
+                </motion.h1>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {servicesData.map((item) => (
@@ -27,7 +34,12 @@ export const Services = () => {
                                 ),
                             }}
                         >
-                            <div className="flex flex-col justify-center items-center max-w-[300px] p-5 shadow-lg mx-auto rounded-xl bg-white">
+                            <motion.div
+                                variants={FadeUp(item.delay)}
+                                initial="hidden"
+                                whileInView="show"
+                                className="flex flex-col justify-center items-center max-w-[300px] p-5 shadow-lg mx-auto rounded-xl bg-white"
+                            >
                                 <img
                                     src={item.icon}
                                     alt=""
@@ -41,7 +53,7 @@ export const Services = () => {
                                         {item.desc}
                                     </p>
                                 </div>
-                            </div>
+                            </motion.div>
                         </UpdateFollower>
                     ))}
                 </div>

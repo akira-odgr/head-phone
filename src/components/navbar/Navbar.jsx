@@ -1,10 +1,9 @@
+import { navbarData } from "./navbarData";
 import { UpdateFollower } from "react-mouse-follower";
 import { motion } from "framer-motion";
 
 import { MdMenu } from "react-icons/md";
 import { SlEarphones } from "react-icons/sl";
-
-import { navbarData } from "./navbarData";
 
 export const Navbar = () => {
     return (

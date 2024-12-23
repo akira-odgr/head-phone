@@ -1,5 +1,3 @@
-import { easeInOut } from "framer-motion";
-
 export const FadeUp = (delay) => {
     return {
         hidden: {
@@ -14,7 +12,6 @@ export const FadeUp = (delay) => {
             transition: {
                 duration: 0.5,
                 delay: delay,
-                ease: easeInOut,
             },
         },
         exit: {
@@ -23,7 +20,6 @@ export const FadeUp = (delay) => {
             scale: 0.5,
             transition: {
                 duration: 0.2,
-                ease: easeInOut,
             },
         },
     };
