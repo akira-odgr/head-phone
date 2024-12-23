@@ -15,6 +15,14 @@ function App() {
             >
                 <Navbar />
                 <Hero />
+            </UpdateFollower>
+            <UpdateFollower
+                mouseOptions={{
+                    backgroundColor: "black",
+                    zIndex: 999,
+                    followSpeed: 1.5,
+                }}
+            >
                 <Services />
             </UpdateFollower>
         </main>
