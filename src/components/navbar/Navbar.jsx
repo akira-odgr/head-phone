@@ -1,4 +1,4 @@
-import { NavbarData } from "./NavbarData";
+import { navbarData } from "./navbardata";
 import { UpdateFollower } from "react-mouse-follower";
 import { motion } from "framer-motion";
 
@@ -27,7 +27,7 @@ export const Navbar = () => {
                     {/* ____ Menu section ____ */}
                     <div className="hidden md:block">
                         <ul className="flex items-center gap-4">
-                            {NavbarData.map((item) => {
+                            {navbarData.map((item) => {
                                 return (
                                     <li key={item.id}>
                                         <UpdateFollower
