@@ -22,7 +22,7 @@ export const Blog = () => {
                                     scale: 5,
                                 }}
                             >
-                                <div className="flex flex-col items-center justify-center gap-6 p-5 max-w-[300px] mx-auto shadow-lg rounded-md bg-white hover:-translate-y-2 duration-300">
+                                <div className="flex flex-col items-center justify-center gap-6 p-5 max-w-[300px] mx-auto shadow-lg rounded-md bg-white md:hover:-translate-y-2 duration-300">
                                     <img src={item.image} alt="" />
                                     <div>
                                         <h1 className="text-xl font-bold line-clamp-2">

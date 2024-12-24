@@ -8,6 +8,7 @@ import {
 import { FaFacebook } from "react-icons/fa";
 import Cards from "../../assets/credit-cards.webp";
 import { linkList } from "./footerData";
+import { motion } from "framer-motion";
 
 export const Footer = () => {
     return (
@@ -15,7 +16,12 @@ export const Footer = () => {
             <div className="container">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     {/* Company details section */}
-                    <div className="space-y-6">
+                    <motion.div
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.2, once: true }}
+                        className="space-y-6"
+                    >
                         <h1 className="text-3xl font-bold uppercase">
                             Playing
                         </h1>
@@ -33,10 +39,15 @@ export const Footer = () => {
                                 <FaMapLocationDot /> Noida, Utta Pradesh
                             </p>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* Footer Links section */}
-                    <div className="space-y-6">
+                    <motion.div
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.4, once: true }}
+                        className="space-y-6"
+                    >
                         <h1 className="text-3xl font-bold uppercase">
                             Quick Link
                         </h1>
@@ -56,10 +67,15 @@ export const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* Social Links section */}
-                    <div className="space-y-6">
+                    <motion.div
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.6, once: true }}
+                        className="space-y-6"
+                    >
                         <h1 className="text-3xl font-bold uppercase">
                             Follow Us
                         </h1>
@@ -73,7 +89,7 @@ export const Footer = () => {
                             <p>Payment Methods</p>
                             <img src={Cards} alt="" className="w-[80%]" />
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* Copyright section */}

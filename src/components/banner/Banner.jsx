@@ -59,6 +59,7 @@ export const Banner = () => {
                                 variants={FadeUp(0.6)}
                                 initial="hidden"
                                 whileInView="show"
+                                transition={{ once: true }}
                                 className="border-2 border-[#e33343] text-[#e33343] px-6 py-2 rounded-md hover:bg-[#e33343] hover:text-white"
                             >
                                 Shop Now
