@@ -4,7 +4,7 @@ import { blogData } from "./blogData";
 export const Blog = () => {
     return (
         <section>
-            <div className="container">
+            <div className="container my-14">
                 <h1 className="text-3xl font-bold text-center font-poppins pb-8">
                     Blog
                 </h1>

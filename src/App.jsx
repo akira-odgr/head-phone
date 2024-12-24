@@ -5,6 +5,7 @@ import { Services } from "./components/services/Services";
 import { Banner } from "./components/banner/Banner";
 import { BannerText } from "./components/banner/BannerText";
 import { Blog } from "./components/blog/Blog";
+import { Footer } from "./components/footer/Footer";
 
 function App() {
     return (
@@ -30,6 +31,7 @@ function App() {
                 <Banner />
                 <BannerText />
                 <Blog />
+                <Footer />
             </UpdateFollower>
         </main>
     );

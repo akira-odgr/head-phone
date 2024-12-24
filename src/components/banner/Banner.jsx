@@ -8,7 +8,7 @@ export const Banner = () => {
         <section>
             <div className="container grid grid-cols-1 md:grid-cols-2 py-14 space-y-6 md:space-y-0 gap-12">
                 {/* _____ Banner Image _____ */}
-                <div>
+                <div className="mx-auto">
                     <motion.img
                         initial={{ opacity: 0, x: -100, rotate: -180 }}
                         whileInView={{ opacity: 1, x: 0, rotate: 0 }}

@@ -15,7 +15,7 @@ export const BannerText = () => {
                         }}
                     >
                         <p className="font-bold text-4xl max-w-[700px] mx-auto leading-normal">
-                            Headphone With With Good Quality And affordable;
+                            Headphone With With Good Quality And affordable.
                         </p>
                     </UpdateFollower>
                 </div>
