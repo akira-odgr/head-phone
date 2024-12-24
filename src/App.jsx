@@ -4,6 +4,7 @@ import { Hero } from "./components/hero/Hero";
 import { Services } from "./components/services/Services";
 import { Banner } from "./components/banner/Banner";
 import { BannerText } from "./components/banner/BannerText";
+import { Blog } from "./components/blog/Blog";
 
 function App() {
     return (
@@ -26,9 +27,10 @@ function App() {
                 }}
             >
                 <Services />
+                <Banner />
+                <BannerText />
+                <Blog />
             </UpdateFollower>
-            <Banner />
-            <BannerText />
         </main>
     );
 }

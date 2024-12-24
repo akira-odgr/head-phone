@@ -11,6 +11,7 @@ export const Services = () => {
                     variants={FadeUp(0.2)}
                     initial="hidden"
                     whileInView="show"
+                    viewport={{ once: true }}
                     className="text-3xl font-bold text-center pb-10"
                 >
                     Service
@@ -38,6 +39,7 @@ export const Services = () => {
                                 variants={FadeUp(item.delay)}
                                 initial="hidden"
                                 whileInView="show"
+                                viewport={{ once: true }}
                                 className="flex flex-col justify-center items-center max-w-[300px] p-5 shadow-lg mx-auto rounded-xl bg-white"
                             >
                                 <img

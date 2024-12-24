@@ -30,6 +30,7 @@ export const Banner = () => {
                             variants={FadeUp(0.2)}
                             initial="hidden"
                             whileInView="show"
+                            viewport={{ once: true }}
                             className="text-3xl lg:text-4xl font-semibold font-poppins"
                         >
                             The Latest Headphone With The Latest Technology
@@ -38,6 +39,7 @@ export const Banner = () => {
                             variants={FadeUp(0.4)}
                             initial="hidden"
                             whileInView="show"
+                            viewport={{ once: true }}
                         >
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Ratione qui illum harum expedita, laboriosam
